@@ -1,0 +1,28 @@
+<html>
+<script language="Javascript">
+function validate()
+{
+if(document.form.city.selectedIndex=="")
+{
+alert ( "Please select city!");
+return false;
+}
+var sel = document.getElementById("city");
+//get the selected option
+var selectedText = sel.options[sel.selectedIndex].text;
+alert("You have selected : "+selectedText);
+return true;
+}
+</script>
+<form name="form" method="post" onSubmit="return validate()"><pre>
+Select your City <select name="city" id="city">
+<option value="Select">Select</option>
+<option value="Delhi">Delhi</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Agra">Agra</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Pune">Pune</option>
+</select>
+<input type="submit" name="Submit" value="Submit">
+</pre></form>
+</html>

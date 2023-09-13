@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registaration Form</title>
+    <link rel="icon" href="download.jpeg">
+    <style>
+        input[type=submit] {
+            background-color: rgba(0, 143, 0, 0.845);
+            color: white;
+            border: none;
+            padding: 5px;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=password],
+        input[type=email],
+        input[type=date],
+        textarea {
+            width: 50%;
+            padding: 3px;
+            /* border-radius: 4px; */
+            color: rgb(130, 129, 129);
+            /* border-color:gray ; */
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form name="forms" action="submit.html" method="post"
+        onsubmit=" return ValidData()">
+        <table style="background-color: rgba(128, 128, 128, 0.187); width: 100%; height: auto;  padding: 10px;">
+            <tr>
+                <td style="width: 15%;">Fist Name:-</td>
+                <td><input type="text" name="fname" id="fname" placeholder="Enter your first name" pattern="[a-z,A-Z]{3,6}"></td>
+            </tr>
+            <tr>
+                <td>Last Name:-</td>
+                <td><input type="text" name="lname" id="lname" placeholder="Enter your last name" pattern="[a-z,A-Z]{3,6}"></td>
+            </tr>
+            <tr>
+                <td>Enail:-</td>
+                <td><input type="email" name="email" id="email" placeholder="it should contains '@' "></td>
+            </tr>
+            <tr>
+                <td>Phone No:-</td>
+                <td><input type="number" name="mobile" id="my-input"  placeholder=" 10 digits are allow"></td>
+            </tr>
+            <tr>
+                <td>Gender:-</td>
+                <td>  <input type="radio" name="r1" id="rbtn1">Female
+                    <input type="radio" name="r1" id="rbtn2">Male
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth:-</td>
+                <td><input type="date" name="date" id="date" placeholder="mm/dd/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Address:-</td>
+                <td><textarea name="" id="add" cols="30" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td>City:-</td>
+                <td><input type="text" name="" id="city"></td>
+            </tr>
+            <tr>
+                <td>Area Pin:-</td>
+                <td><input type="number" name="" id="my-input2"></td>
+            </tr>
+            <tr>
+                <td>State:-</td>
+                <td><input type="text" name="" id="state"></td>
+            </tr>
+            <tr>
+                <td>Qualification:-</td>
+                <td><select name="select" id="select" required >
+                        <option value="">select Qualification
+                        </option>
+                        <option value="">10th pass</option>
+                        <option value="">12th pass</option>
+                        <option value="">Undergraduate</option>
+                        <option value="">Postgraduate</option>
+
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Specializtion:-</td>
+                <td><br>
+                    <input type="checkbox" name="contsiner" id="one" value="cs" >Computer Science <br>
+                    <input type="checkbox" name="contsiner" id="" value="it ">Infrormation Technology <br>
+                    <input type="checkbox" name="contsiner" id="" value="ca">Computer Architecture <br>
+                    <input type="checkbox" name="contsiner" id="" value="tc">Tele Communication
+
+                </td>
+            </tr>
+            <tr>
+                <td>Password:-</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+
+                <td>      <input type="submit" name="" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
